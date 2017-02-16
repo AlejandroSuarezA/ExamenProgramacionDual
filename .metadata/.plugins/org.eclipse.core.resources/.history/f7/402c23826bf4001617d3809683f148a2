@@ -1,0 +1,16 @@
+package org.foobarspam.cotxox.conductores;
+
+public class Conductor {
+
+	private String nombre = "";
+	
+	
+	public Conductor(String nombre){
+		this.nombre = nombre;
+	}
+	
+	public String getNombre(){
+		return this.nombre;
+	}
+	
+}
