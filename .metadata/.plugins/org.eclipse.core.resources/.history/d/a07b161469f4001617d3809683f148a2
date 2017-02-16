@@ -93,9 +93,7 @@ public class CarreraTest {
 		carrera.setDistancia(distancia);
 		carrera.setTiempoEsperado(tiempoEsperadoMinutos);
 		
-		double precioEsperado = 13.9625;
-		
-		assertEquals(precioEsperado, carrera.getCosteEsperado(), 0.001);
+		double precioEsperado = 
 		
 	}
 

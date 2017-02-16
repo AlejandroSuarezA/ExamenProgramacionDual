@@ -20,9 +20,6 @@ public class Tarifa {
 		return costeMinuto;
 	}
 	
-	public static double getCosteMinimo(){
-		return costeMinimo;
-	}
 
 	
 	public static double getCosteTiempo(double tiempo){
@@ -30,14 +27,7 @@ public class Tarifa {
 	}
 	
 	public static double getCosteTotalEsperado(double tiempo, double distancia){
-		double precioCalculado = getCosteTiempo(tiempo) + getCosteDistancia(distancia);
-		
-		if (precioCalculado >= getCosteMinimo()){
-			return precioCalculado;
-		}
-		else{
-			return getCosteMinimo();
-		}
+		return getCosteTiempo(tiempo) + getCosteDistancia(distancia);
 	}
 	
 

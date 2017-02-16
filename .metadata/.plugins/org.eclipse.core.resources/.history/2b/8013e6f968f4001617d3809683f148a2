@@ -1,7 +1,5 @@
 package org.foobarspam.cotxox.carrera;
 
-import org.foobarspam.cotxox.tarifa.Tarifa;
-
 public class Carrera {
 	private String tarjetaCredito = "No se ha insertado tarjeta";
 	private String origen = "punto de origen";
@@ -44,19 +42,6 @@ public class Carrera {
 	
 	public double getDistancia(){
 		return this.distancia;
-	}
-	
-	public double getTiempoEsperado(){
-		return this.tiempoEsperadoMinutos;
-	}
-	
-	public double getCosteEsperado(){
-		
-		double distancia = this.getDistancia();
-		double tiempo = this.getTiempoEsperado();
-		
-		return Tarifa.getCosteTotalEsperado(tiempo, distancia);
-		
 	}
 
 }

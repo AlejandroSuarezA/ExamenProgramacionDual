@@ -41,15 +41,5 @@ public class TarifaTest {
 		
 		assertEquals(precioEsperado, Tarifa.getCosteTotalEsperado(tiempoEsperadoMinutos, distancia), 0.001);
 	}
-	
-	@Test
-	public void precioMinimo(){
-		double distancia = 1.00;
-		double tiempoEsperadoMinutos = 1.00;
-		
-		double precioEsperado = 5.00;
-		
-		assertEquals(precioEsperado, Tarifa.getCosteTotalEsperado(tiempoEsperadoMinutos, distancia), 0.001);
-	}
 
 }

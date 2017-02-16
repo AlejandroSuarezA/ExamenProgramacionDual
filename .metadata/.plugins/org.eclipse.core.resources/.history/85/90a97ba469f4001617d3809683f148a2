@@ -49,7 +49,7 @@ public class TarifaTest {
 		
 		double precioEsperado = 5.00;
 		
-		assertEquals(precioEsperado, Tarifa.getCosteTotalEsperado(tiempoEsperadoMinutos, distancia), 0.001);
+		assertEquals(precioEsperado, Tarifa.getCosteTotalEsperado(tiempoEsperadoMinutos, distancia));
 	}
 
 }
