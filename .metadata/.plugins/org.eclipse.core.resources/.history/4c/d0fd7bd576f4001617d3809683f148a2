@@ -69,14 +69,6 @@ public class Conductor {
 	}
 	
 	public void ocupar(){
-		this.ocupado = true;
-	}
-	
-	public void liberar(){
 		this.ocupado = false;
-	}
-	
-	public double getValoracion(){
-		return this.valoracionMedia;
 	}
 }

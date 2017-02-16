@@ -13,7 +13,6 @@ public class Carrera {
 	private int tiempoEsperadoMinutos = 0;
 	private Conductor conductor = null;
 	private double costeTotal = 0.00;
-	private int propina = 0;
 	
 	public Carrera(String tarjetaCredito){
 		this.tarjetaCredito = tarjetaCredito;
@@ -81,20 +80,5 @@ public class Carrera {
 	public double getCosteTotal(){
 		return this.costeTotal;
 	}
-	
-	public void recibirPropina(int propina){
-		this.propina = propina;
-	}
-	
-	public int getPropina(){
-		return this.propina;
-	}
-	
-	public void liberarConductor(){
-		this.conductor.liberar();
-	}
 
-	public Conductor getConductor(){
-		return this.conductor;
-	}
 }

@@ -89,12 +89,5 @@ public class Carrera {
 	public int getPropina(){
 		return this.propina;
 	}
-	
-	public void liberarConductor(){
-		this.conductor.liberar();
-	}
 
-	public Conductor getConductor(){
-		return this.conductor;
-	}
 }
