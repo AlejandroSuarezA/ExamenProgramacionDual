@@ -1,0 +1,27 @@
+package org.foobarspam.cotxox.testing;
+
+import org.foobarspam.cotxox.tarifa.*;
+import static org.junit.Assert.*;
+
+
+public class TarifasTest {
+
+	@Test
+	public void precioDistanciaTest() {
+
+		String tarjetaCredito = "4916119711304546";
+		String origen = "Aeroport Son Sant Joan";
+		String destino = "Magaluf";
+		double distancia = 7.75;
+		int tiempoEsperadoMinutos = 10;
+
+		Tarifa tarifa = new Tarifa(distancia, tiempoEsperadoMinutos);
+		double precioEsperado = 10.4625;
+		assertEquals(precioEsperado, tarifa.getCosteDistancia(), 0.001);
+		
+		
+
+		
+		
+	}
+}

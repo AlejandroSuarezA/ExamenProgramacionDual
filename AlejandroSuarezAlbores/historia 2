@@ -1,0 +1,13 @@
+Quien--> El usuario que ha introducido sus datos
+Que--> Quiere ver que le va a costar el trayecto
+Para que --> Para decidir si solicita un conductor
+
+
+Requisitos
+Hay unos precios fijos en cuanto a Milla Minuto y un precio Minimo
+
+Se ha de hacer la media individualmente del precio/minuto y el precio/milla. De ser inferior al precio Minimo, se devolvera este
+
+
+Casos test
+Se recojen los datos introducidos por el usuario y se calcula el precio del trayecto

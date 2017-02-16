@@ -1,0 +1,48 @@
+package org.foobarspam.cotxox.testing;
+
+import static org.junit.Assert.*;
+
+import org.foobarspam.cotxox.tarifa.Tarifa;
+import org.junit.Test;
+
+public class TarifaTest {
+
+	@Test
+	public void precioDistanciaTest() {
+		
+		double distancia = 7.75;
+		int tiempoEsperadoMinutos = 10;
+
+		Tarifa tarifa = new Tarifa(distancia, tiempoEsperadoMinutos);
+		
+		double precioEsperado = 10.4625;
+		assertEquals(precioEsperado, tarifa.getCosteDistancia(), 0.001);
+		
+	}
+	
+	@Test
+	public void precioTiempotest(){
+		double distancia = 7.75;
+		int tiempoEsperadoMinutos = 10;
+
+		Tarifa tarifa = new Tarifa(distancia, tiempoEsperadoMinutos);
+		
+		double precioEsperado = 3.5;
+		assertEquals(precioEsperado , tarifa.getCosteTiempo(), 0.001);
+		
+		
+	}
+	
+	@Test
+	public void precioTotal(){
+		double distancia = 7.75;
+		int tiempoEsperadoMinutos = 10;
+
+		Tarifa tarifa = new Tarifa(distancia, tiempoEsperadoMinutos);
+		
+		double precioEsperado = 13.9625;
+		
+		assertEquals(precioEsperado, tarifa.getCosteTotalEsperado(), 0.001);
+	}
+
+}

@@ -1,0 +1,25 @@
+package org.foobarspam.cotxox.testing;
+
+import org.foobarspam.cotxox.carrera.Carrera;
+import org.foobarspam.cotxox.tarifa.*;
+
+public class TarifaTest {
+
+	@Test
+	public void precioDistanciaTest() {
+
+		String tarjetaCredito = "4916119711304546";
+		String origen = "Aeroport Son Sant Joan";
+		String destino = "Magaluf";
+		double distancia = 7.75;
+		int tiempoEsperadoMinutos = 10;
+
+		Tarifa tarifa = new Tarifa(distancia, tiempoEsperadoMinutos);
+		
+		
+
+		
+		
+	}
+
+}

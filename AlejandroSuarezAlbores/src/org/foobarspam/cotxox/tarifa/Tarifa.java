@@ -5,14 +5,30 @@ public class Tarifa {
 	private static double costeMinuto = 0.35;
 	private static double costeMinimo = 5.00;
 	
-	private double distancia = 0.00; 
 	
-	public Tarifa(double distancia){
-		this.distancia = distancia;
+	public static double getCosteMilla(){
+		return costeMilla;
 	}
+
 	
-	public double getCosteDistancia(){
+	public static double getCosteDistancia(double distancia){
+		return getCosteMilla() * distancia ;
 		
 	}
+	
+	public static double getCosteMinuto(){
+		return costeMinuto;
+	}
+	
+
+	
+	public static double getCosteTiempo(double tiempo){
+		return getCosteMinuto() * tiempo;
+	}
+	
+	public static double getCosteTotalEsperado(double tiempo, double distancia){
+		return getCosteTiempo(tiempo) + getCosteDistancia(distancia);
+	}
+	
 
 }
