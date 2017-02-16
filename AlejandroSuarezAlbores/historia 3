@@ -1,0 +1,12 @@
+Quien --> El usuario que ha aceptado la tarifa para llegar a su destino
+Que --> Quiere seleccionar a un conductor para que lo lleve
+Para que --> Para realizar el trayecto
+
+
+Requerimientos
+Se han de ver los datos de la conductora a fin de que el usuario pueda decidir si quiere seleccionar a esa conductora o a otra
+
+Test
+Se crea un conjunto de conductoras
+Se pasa este grupo a la carrera del usuario y le muestra una que este disponible y se la asigna
+El conductor asignado ahora presenta el estado Ocupado para evitar errores en otras solicitudes
