@@ -31,9 +31,5 @@ public class Carrera {
 	public String getOrigen(){
 		return this.origen;
 	}
-	
-	public String getDestino(){
-		return this.destino;
-	}
 
 }

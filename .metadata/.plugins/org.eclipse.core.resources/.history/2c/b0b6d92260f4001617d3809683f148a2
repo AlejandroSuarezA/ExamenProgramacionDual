@@ -24,16 +24,6 @@ public class Carrera {
 		this.distancia = distancia;
 	}
 	
-	public void setTiempoEsperado(int tiempoEsperado){
-		this.tiempoEsperadoMinutos = tiempoEsperado;
-	}
 	
-	public String getOrigen(){
-		return this.origen;
-	}
-	
-	public String getDestino(){
-		return this.destino;
-	}
 
 }

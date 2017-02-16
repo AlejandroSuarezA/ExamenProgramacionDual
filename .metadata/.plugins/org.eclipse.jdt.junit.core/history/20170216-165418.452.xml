@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CarreraTest" project="AlejandroSuarezAlbores" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="org.foobarspam.cotxox.testing.CarreraTest" time="0.001">
+    <testcase name="testOrigen" classname="org.foobarspam.cotxox.testing.CarreraTest" time="0.001"/>
+  </testsuite>
+</testrun>
