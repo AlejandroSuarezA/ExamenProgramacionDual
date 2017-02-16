@@ -35,13 +35,4 @@ public class ConductorTest {
 		assertEquals(modelo, conductor.getModelo());
 	}
 
-	@Test
-	public void testValoracion(){
-		Conductor conductor = new Conductor("Sam");
-		int valoracion = 4;
-		
-		conductor.setValoracion(valoracion);
-		
-		assertEquals(valoracion, conductor.getValoracionMedia(), 0.001);
-	}
 }

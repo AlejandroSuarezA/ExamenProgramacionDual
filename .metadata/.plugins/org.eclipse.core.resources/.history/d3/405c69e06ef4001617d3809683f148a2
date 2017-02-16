@@ -38,10 +38,10 @@ public class ConductorTest {
 	@Test
 	public void testValoracion(){
 		Conductor conductor = new Conductor("Sam");
-		int valoracion = 4;
+		byte valoracion = 4;
 		
 		conductor.setValoracion(valoracion);
 		
-		assertEquals(valoracion, conductor.getValoracionMedia(), 0.001);
+		assertEquals(valoracion, conductor.getValoracionMedia());
 	}
 }
