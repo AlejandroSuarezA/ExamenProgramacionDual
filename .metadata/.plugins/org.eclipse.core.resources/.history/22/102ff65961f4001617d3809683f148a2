@@ -35,6 +35,6 @@ public class Cotxox {
 		System.out.println("From: "+ carrera.getOrigen());
 		System.out.println("To: " + carrera.getDestino());
 		System.out.println("Distance: " + carrera.getDistancia());
-	}
+		
 	
 }

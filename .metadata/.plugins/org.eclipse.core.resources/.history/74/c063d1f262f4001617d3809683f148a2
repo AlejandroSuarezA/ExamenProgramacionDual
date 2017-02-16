@@ -10,9 +10,5 @@ public class Tarifa {
 	public Tarifa(double distancia){
 		this.distancia = distancia;
 	}
-	
-	public double getCosteDistancia(){
-		
-	}
 
 }
