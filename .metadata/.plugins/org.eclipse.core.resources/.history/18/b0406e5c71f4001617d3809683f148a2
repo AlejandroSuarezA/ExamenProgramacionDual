@@ -58,12 +58,4 @@ public class ConductorTest {
 		assertEquals(media, conductor.getValoracionMedia(), 0.001);
 	}
 	
-	@Test
-	public void testConductorOcupado(){
-		Conductor conductor = new Conductor("Sam");
-		
-		assertFalse(conductor.isOcupado());
-		
-	}
-	
 }

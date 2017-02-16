@@ -1,9 +1,6 @@
 package org.foobarspam.cotxox.carrera;
 
-import java.util.ArrayList;
-
 import org.foobarspam.cotxox.tarifa.Tarifa;
-import org.foobarspam.cotxox.conductores.*;
 
 public class Carrera {
 	private String tarjetaCredito = "No se ha insertado tarjeta";
@@ -62,8 +59,7 @@ public class Carrera {
 		
 	}
 	
-	public Conductor asignarConductor(PoolConductores pool){
-		return pool.asignarConductor();
+	public Conductor asignarConductor(ArrayList<Conductor> pool){
 		
 	}
 

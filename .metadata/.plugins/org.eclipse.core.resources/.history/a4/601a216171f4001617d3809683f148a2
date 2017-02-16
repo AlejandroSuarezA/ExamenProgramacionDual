@@ -9,7 +9,6 @@ public class Conductor {
 	private String modelo = "modelo sin decidir";
 	private ArrayList<Integer> valoraciones = new ArrayList<>();
 	private double valoracionMedia = 0.00;
-	private Boolean ocupado = true;
 	
 	public Conductor(String nombre){
 		this.nombre = nombre;
@@ -64,7 +63,4 @@ public class Conductor {
 		return this.valoracionMedia;
 	}
 	
-	public Boolean isOcupado(){
-		return this.ocupado;
-	}
 }

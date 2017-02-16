@@ -119,12 +119,5 @@ public class CarreraTest {
 		assertEquals(precioEsperado, carrera.getCosteEsperado(), 0.001);
 		
 	}
-	
-	
-	@Test
-	public void testConductorlibre(){
-		
-	}
-
 
 }

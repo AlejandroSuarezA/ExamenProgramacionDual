@@ -120,11 +120,6 @@ public class CarreraTest {
 		
 	}
 	
-	
-	@Test
-	public void testConductorlibre(){
-		
-	}
 
 
 }
