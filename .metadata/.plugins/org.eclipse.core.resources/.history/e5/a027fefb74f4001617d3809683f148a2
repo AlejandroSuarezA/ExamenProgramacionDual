@@ -11,8 +11,6 @@ public class Carrera {
 	private String destino = "punto de destino";
 	private double distancia = 0.0;
 	private int tiempoEsperadoMinutos = 0;
-	private Conductor conductor = null;
-	private double costeTotal = 0.00;
 	
 	public Carrera(String tarjetaCredito){
 		this.tarjetaCredito = tarjetaCredito;
@@ -64,21 +62,9 @@ public class Carrera {
 		
 	}
 	
-	public void setConductor(Conductor conductor){
-		this.conductor = conductor;
-	}
-	
-	public void asignarConductor(PoolConductores pool){
-		this.setConductor(pool.asignarConductor());
+	public Conductor asignarConductor(PoolConductores pool){
+		return pool.asignarConductor();
 		
-	}
-	
-	public void realizarPago(double precio){
-		this.costeTotal = precio;
-	}
-	
-	public double getCosteTotal(){
-		return this.costeTotal;
 	}
 
 }
