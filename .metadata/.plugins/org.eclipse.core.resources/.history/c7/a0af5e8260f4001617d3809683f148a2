@@ -35,13 +35,5 @@ public class Carrera {
 	public String getDestino(){
 		return this.destino;
 	}
-	
-	public String getTarjetaCredito(){
-		return this.tarjetaCredito;
-	}
-	
-	public double getDistancia(){
-		return this.distancia;
-	}
 
 }

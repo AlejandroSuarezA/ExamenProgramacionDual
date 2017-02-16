@@ -39,9 +39,5 @@ public class Carrera {
 	public String getTarjetaCredito(){
 		return this.tarjetaCredito;
 	}
-	
-	public double getDistancia(){
-		return this.distancia;
-	}
 
 }

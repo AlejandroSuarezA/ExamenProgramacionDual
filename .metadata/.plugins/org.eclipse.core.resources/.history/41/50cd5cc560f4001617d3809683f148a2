@@ -76,7 +76,7 @@ public class CarreraTest {
 		carrera.setDistancia(distancia);
 		carrera.setTiempoEsperado(tiempoEsperadoMinutos);
 		
-		assertEquals(distancia, carrera.getDistancia(), 0.0);
+		asertEquals(distancia, carrera.getDistancia());
 	}
 
 }
