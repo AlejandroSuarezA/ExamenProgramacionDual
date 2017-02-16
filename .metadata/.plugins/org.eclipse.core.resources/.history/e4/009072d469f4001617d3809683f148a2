@@ -98,26 +98,5 @@ public class CarreraTest {
 		assertEquals(precioEsperado, carrera.getCosteEsperado(), 0.001);
 		
 	}
-	
-	@Test
-	public void testPrecioMinimo(){
-		
-		String tarjetaCredito = "4916119711304546";
-		String origen = "Aeroport Son Sant Joan";
-		String destino= "Magaluf";
-		double distancia = 1.00;
-		int tiempoEsperadoMinutos = 1;
-		
-		Carrera carrera = new Carrera(tarjetaCredito);
-		carrera.setOrigen(origen);
-		carrera.setDestino(destino);
-		carrera.setDistancia(distancia);
-		carrera.setTiempoEsperado(tiempoEsperadoMinutos);
-		
-		double precioEsperado = 5.00;
-		
-		assertEquals(precioEsperado, carrera.getCosteEsperado(), 0.001);
-		
-	}
 
 }
