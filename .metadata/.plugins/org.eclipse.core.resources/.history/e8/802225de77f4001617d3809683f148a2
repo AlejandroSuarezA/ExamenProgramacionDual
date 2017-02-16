@@ -22,7 +22,7 @@ public class PoolConductores {
 			if(this.poolConductores.get(pilotoNumero).isOcupado() == true){
 				pilotoAsignado = this.poolConductores.get(pilotoNumero);
 				pilotoAsignado.ocupar();
-				
+				break;
 			}
 			else{
 				pilotoNumero = ThreadLocalRandom.current().nextInt(0, this.poolConductores.size());
