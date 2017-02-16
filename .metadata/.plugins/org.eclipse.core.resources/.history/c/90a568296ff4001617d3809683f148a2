@@ -44,18 +44,4 @@ public class ConductorTest {
 		
 		assertEquals(valoracion, conductor.getValoracionMedia(), 0.001);
 	}
-	
-	@Test
-	public void testValoracion2(){
-		Conductor conductor = new Conductor("Sam");
-		int valoracion = 4;
-		int valoracion2 = 2;
-		conductor.setValoracion(valoracion);
-		conductor.setValoracion(valoracion2);
-		double media = 3.00;
-		
-		
-		assertEquals(media, conductor.getValoracionMedia(), 0.001);
-	}
-	
 }
