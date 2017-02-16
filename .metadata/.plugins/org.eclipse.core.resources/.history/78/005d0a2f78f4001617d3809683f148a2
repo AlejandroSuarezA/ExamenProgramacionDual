@@ -1,0 +1,69 @@
+package org.foobarspam.cotxox.testing;
+
+import org.foobarspam.cotxox.conductores.*;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ConductorTest {
+
+	@Test
+	public void testNombre() {
+		Conductor conductor = new Conductor("Sam");
+		
+		assertEquals("Sam", conductor.getNombre());
+	}
+	
+	@Test
+	public void testMatricula() {
+		Conductor conductor = new Conductor("Sam");
+		String matricula = "4ABC123";
+		
+		conductor.setMatricula(matricula);
+		
+		assertEquals(matricula, conductor.getMatricula());
+	}
+	
+	@Test
+	public void testModelo(){
+		Conductor conductor = new Conductor("Sam");
+		String modelo = "Opel Corsa";
+		
+		conductor.setModelo(modelo);
+		
+		assertEquals(modelo, conductor.getModelo());
+	}
+
+	@Test
+	public void testValoracion(){
+		Conductor conductor = new Conductor("Sam");
+		int valoracion = 4;
+		
+		conductor.setValoracion(valoracion);
+		
+		assertEquals(valoracion, conductor.getValoracionMedia(), 0.001);
+	}
+	
+	@Test
+	public void testValoracion2(){
+		Conductor conductor = new Conductor("Sam");
+		int valoracion = 4;
+		int valoracion2 = 2;
+		conductor.setValoracion(valoracion);
+		conductor.setValoracion(valoracion2);
+		double media = 3.00;
+		
+		
+		assertEquals(media, conductor.getValoracionMedia(), 0.001);
+	}
+	
+	@Test
+	public void testConductorOcupado(){
+		Conductor conductor = new Conductor("Sam");
+		
+		assertFalse(conductor.isOcupado());
+		
+	}
+	
+}

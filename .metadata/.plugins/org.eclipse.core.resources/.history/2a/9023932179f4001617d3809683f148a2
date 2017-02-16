@@ -113,8 +113,6 @@ public class ConductorTest {
 		
 		
 		assertEquals("Samantha" , carrera.getConductor().getNombre());
-		assertEquals("4ABC123", carrera.getConductor().getMatricula());
-		assertEquals("Chevy Malibu" , carrera.getConductor().getModelo());
 	
 	
 	}
