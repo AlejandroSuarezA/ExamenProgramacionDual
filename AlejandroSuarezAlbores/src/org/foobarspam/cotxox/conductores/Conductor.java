@@ -10,7 +10,7 @@ public class Conductor {
 	private String matricula = "matricula sin especificar";
 	private String modelo = "modelo sin decidir";
 	private ArrayList<Integer> valoraciones = new ArrayList<>();
-	private double valoracionMedia = 0.00;
+	private double valoracionMedia = 0.0;
 	private Boolean ocupado = true;
 
 	// Constructor
@@ -79,13 +79,13 @@ public class Conductor {
 	
 	public void actualizarMedia() {
 
-		int suma = 0;
+		double suma = 0.0;
 
 		for (Integer valoracion : this.getValoraciones()) {
-			suma = suma + valoracion;
+			suma += valoracion;
 		}
-		int longitud = this.getValoraciones().size();
-		double media = suma / longitud;
+		
+		double media = suma / this.getValoraciones().size();
 		this.setValoracionMedia(media);
 	}
 }

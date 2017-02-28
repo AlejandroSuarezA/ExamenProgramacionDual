@@ -41,7 +41,7 @@ public class ConductorTest {
 	@Test
 	public void testValoracion(){
 		Conductor conductor = new Conductor("Sam");
-		int valoracion = 4;
+		int valoracion = 5;
 		
 		conductor.setValoracion(valoracion);
 		
@@ -52,15 +52,16 @@ public class ConductorTest {
 	public void testValoracion2(){
 		Conductor conductor = new Conductor("Sam");
 		int valoracion = 4;
-		int valoracion2 = 2;
+		int valoracion2 = 3;
 		conductor.setValoracion(valoracion);
 		conductor.setValoracion(valoracion2);
-		double media = 3.00;
+		double media = 3.5;
 		
 		
 		assertEquals(media, conductor.getValoracionMedia(), 0.001);
 	}
 	
+
 	@Test
 	public void testConductorOcupado(){
 		Conductor conductor = new Conductor("Sam");
