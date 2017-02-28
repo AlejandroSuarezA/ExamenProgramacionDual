@@ -7,20 +7,27 @@ import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class ConductorTest {
+	
+	Conductor conductor;
+	
+	@Before
+	public void initialize(){
+		conductor = new Conductor("Sam");
+	}
 
 	@Test
 	public void testNombre() {
-		Conductor conductor = new Conductor("Sam");
 		
 		assertEquals("Sam", conductor.getNombre());
 	}
 	
 	@Test
 	public void testMatricula() {
-		Conductor conductor = new Conductor("Sam");
 		String matricula = "4ABC123";
 		
 		conductor.setMatricula(matricula);
@@ -30,7 +37,6 @@ public class ConductorTest {
 	
 	@Test
 	public void testModelo(){
-		Conductor conductor = new Conductor("Sam");
 		String modelo = "Opel Corsa";
 		
 		conductor.setModelo(modelo);
@@ -40,7 +46,6 @@ public class ConductorTest {
 
 	@Test
 	public void testValoracion(){
-		Conductor conductor = new Conductor("Sam");
 		int valoracion = 5;
 		
 		conductor.setValoracion(valoracion);
@@ -50,7 +55,6 @@ public class ConductorTest {
 	
 	@Test
 	public void testValoracion2(){
-		Conductor conductor = new Conductor("Sam");
 		int valoracion = 4;
 		int valoracion2 = 3;
 		conductor.setValoracion(valoracion);
@@ -64,7 +68,6 @@ public class ConductorTest {
 
 	@Test
 	public void testConductorOcupado(){
-		Conductor conductor = new Conductor("Sam");
 		
 		assertTrue(conductor.isOcupado());
 		
